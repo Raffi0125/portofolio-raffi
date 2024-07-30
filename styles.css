@@ -77,6 +77,7 @@ section{
   align-items: center;
   justify-content: center;
   gap: 15rem;
+  position: relative;
 }
 .home-content{
   display: flex;
