@@ -12,7 +12,7 @@
   --bg-color: #000000;
   --second-bg-color: #000000;
   --text-color: white;
-  --main-color: #c73d2b;
+  --main-color: #fa2f14ee;
 }
 
 html {
@@ -371,7 +371,7 @@ span{
   transition: 0.4s ease-in-out;
 }
 .service-box:hover{
-  background: rgba(253, 198, 198, 0.664);
+  background: rgb(255, 255, 255);
   color: black;
   border: 5px solid var(--main-color);
   transform: scale(1.03);
@@ -442,5 +442,41 @@ span{
 .project-box:hover .project-layer {
   transform: translateY();
 }
+.contact {
+  background: var(--second-bg-color);
+}
+.contact h2{
+  margin-bottom: 3rem;
+  color: white;
+}
+.contact form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 5rem auto;
+  text-align: center;
+}
+.contact form.input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 2.5rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 2rem;
+  border: 2px solid var(--main-color);
+  margin: 1.5rem 0;
+  resize: none;
+}
+.contact form .btn {
+  margin-top: 2rem;
+}
+
 
 
