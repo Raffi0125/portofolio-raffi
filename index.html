@@ -222,15 +222,15 @@
 
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="https://raffi0125.github.io/login/" data-aos="zoom-out">
+    <form id="contact-form" data-aos="zoom-out">
       <div class="input-box">
         <input type="text" name="nama" placeholder="Nama" required>
-        <input type="email" placeholder="Email" required>
-        <input type="number" placeholder="Nomer Telepon" required>
-        <input type="text" placeholder="Subject">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="number" name="phone" placeholder="Nomor Telepon" required>
+        <input type="text" name="subject" placeholder="Subject">
       </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Pesan"></textarea>
-      <input type="Submit" value="Kirim Pesan" class="btn">
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Pesan"></textarea>
+      <input type="submit" value="Kirim Pesan" class="btn">
     </form>
   </section>
   <footer>
@@ -248,6 +248,35 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("UVCm0l1Od171Sd23b");
+  
+    const form = document.getElementById("contact-form");
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      const formData = new FormData(form);
+      const data = {
+        nama: formData.get("nama"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        subject: formData.get("subject"),
+        message: formData.get("message"),
+      };
+  
+      emailjs
+        .send("service_raffi", "template_raffi", data)
+        .then(() => {
+          alert("Pesan berhasil dikirim!");
+          form.reset();
+        })
+        .catch((error) => {
+          console.error("Gagal mengirim email:", error);
+          alert("Terjadi kesalahan. Silakan coba lagi.");
+        });
+    });
   </script>
 </body>
 </html>
