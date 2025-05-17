@@ -28,22 +28,25 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 4rem 12% 4rem;
-  background: rgb(0, 0, 0, 0.3);
+  padding: 2rem 10%;
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 5;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+.header:hover {
+  background: rgba(0, 0, 0, 1);
 }
 .logo {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--text-color);
-  font-weight: 800;
-  cursor: pointer;
-  transition: 0.3s ease;
+  font-weight: bold;
+  transition: transform 0.3s ease;
 }
-.logo:hover{
+.logo:hover {
   transform: scale(1.1);
 }
 .logo span{
