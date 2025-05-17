@@ -3,52 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portofolio Raffi html</title>
+  <title>Portfolio Raffi</title>
   <link rel="stylesheet" href="styles.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
-  <header class="header">
-    <h1><a href="#main" class="logo"> Web
-      <span>Raffi</span></a></h1>
-    
-    <i class='bx bx-menu' id="menu-icon"></i>
-
-    <nav class="navbar">
+  <header class="header" role="banner">
+    <h1><a href="#main" class="logo">Web <span>Raffi</span></a></h1>
+    <button id="menu-icon" aria-label="Toggle Menu"><i class='bx bx-menu'></i></button>
+    <nav class="navbar" role="navigation">
       <a href="#main" class="active">Home</a>
       <a href="#education">Education</a>
       <a href="#service">Service</a>
-      <a href="#project">Project</a>      
+      <a href="#project">Project</a>
       <a href="#sertifikat">Sertifikat</a>
       <a href="#contact">Kontak</a>
     </nav>
   </header>
   <main>
-    <section class="main" id="main">
+    <section class="main" id="main" role="region" aria-labelledby="main-heading">
       <div class="home-content">
         <aside>
-          <h1>Hi, i'am <span> Raffi</span></h1>
+          <h1 id="main-heading">Hi, I'm <span>Raffi</span></h1>
           <h3 class="text-animation">I'm a <span></span></h3>
-            <p>Siswa SMK Krian 1 yang mengambil jurusan Rekayasa Perangkat Lunak(RPL), saya programmer asal Krian sidoarjo yang mempunyai kemampuan basic Web development, Desain Grafis, dan yang lain, yang mempunyai hobby bermain basket</p>
+          <p>Siswa SMK Krian 1 yang mengambil jurusan Rekayasa Perangkat Lunak (RPL). Saya programmer asal Krian Sidoarjo dengan kemampuan dasar dalam Web Development, Desain Grafis, dan lainnya. Hobi saya adalah bermain basket.</p>
         </aside>
-
         <div class="social-icon">
-          <a href="https://profile.indeed.com/?hl=en_ID&co=ID&from=gnav-homepage"><i class='bx bxl-linkedin'></i></a>
-          <a href="https://github.com/Raffi0125/portofolio-raffi"><i class='bx bxl-github'></i></a>
-          <a href="https://www.instagram.com/_raffiathailla.h/?next=%2F&hl=en"><i class='bx bxl-instagram-alt' ></i></a>
-          <a href="https://x.com/Raffiathaillah"><i class='bx bxl-twitter' ></i></a>
+          <a href="https://profile.indeed.com/?hl=en_ID&co=ID&from=gnav-homepage" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/Raffi0125/portofolio-raffi" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+          <a href="https://www.instagram.com/_raffiathailla.h/?next=%2F&hl=en" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+          <a href="https://x.com/Raffiathaillah" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
         </div>
-
         <div class="btn-group">
           <a href="https://drive.google.com/file/d/1ERsBlTBKDlCC9JvEw26YpvNShzb6nmYx/view?usp=drive_link" class="btn">Download CV</a>
-          <a href="#contact" 
-          class="btn">contact</a>
+          <a href="#contact" class="btn">Contact</a>
         </div>
       </div>
       <div class="home-img" data-aos="fade-down-left">
-        <img src="assets/img/M. Raffi Athaillah.png" alt="">
+        <img src="assets/img/M. Raffi Athaillah.png" alt="Raffi Athaillah">
       </div>
     </section>
   </main>
@@ -72,7 +65,7 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
           <div class="timeline-date">2022
-          </div>\
+          </div>
           <div class="timeline-content">
                <h3>middle school</h3>
                <p>SMPN 2 Gresik
@@ -85,7 +78,7 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
           <div class="timeline-date">2024
-          </div>\
+          </div>
           <div class="timeline-content">
                <h3>high school</h3>
                <p>SMK Krian 1 Sidoarjo
@@ -98,7 +91,7 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
           <div class="timeline-date">2023
-          </div>\
+          </div>
           <div class="timeline-content">
                <h3>part time</h3>
                <p>part time menjaga stand jus buah di daerah Krian
@@ -150,32 +143,32 @@
       <div class="project-content">
         <div class="project-box" data-aos="fade-up-right">
           <aside>
-            <img src="assets/img/normalisasi.png" alt="">
+            <img src="assets/img/normalisasi.png" alt="Project 1">
           </aside> 
           <div class="project-layer">
-            <h4>project 1</h4>
-            <p>empety</p>
+            <h4>Project 1</h4>
+            <p>empty</p>
             <a href="#"><i class='bx bx-link-external'></i></a>
           </div>
         </div>
 
         <div class="project-box" data-aos="fade-up">
-          <aside><img src="assets/img/porto.png" alt="">
+          <aside><img src="assets/img/porto.png" alt="Project 2">
           </aside>
           <div class="project-layer">
-            <h4>project 2</h4>
-            <p>empety</p>
-            <a href="#"><i class='bx bx-link-external'></i></i></a>
+            <h4>Project 2</h4>
+            <p>empty</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
           </div>
         </div>
 
         <div class="project-box" data-aos="fade-up-left">
           <aside>
-            <img src="assets/img/login.png" alt="">
+            <img src="assets/img/login.png" alt="Project 3">
           </aside>
           <div class="project-layer">
-            <h4>project 3</h4>
-            <p>empety</p>
+            <h4>Project 3</h4>
+            <p>empty</p>
             <a href="#"><i class='bx bx-link-external'></i></a>
           </div>
         </div>
@@ -194,7 +187,7 @@
           </aside>
           <div class="sertifikat-layer">
             <h4>project 1</h4>
-            <p>empety</p>
+            <p>empty</p>
             <a href="#"><i class='bx bx-link-external'></i></a>
           </div>
         </div>
@@ -203,8 +196,8 @@
           <img src="assets/img/sertifikat_web.jpg" alt="">
           <div class="sertifikat-layer">
             <h4>project 2</h4>
-            <p>empety</p>
-            <a href="#"><i class='bx bx-link-external'></i></i></a>
+            <p>empty</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
           </div>
         </div>
 
@@ -212,7 +205,7 @@
           <img src="assets/img/Sertifikat_teradata.jpg" alt="">
           <div class="sertifikat-layer">
             <h4>project 3</h4>
-            <p>empety</p>
+            <p>empty</p>
             <a href="#"><i class='bx bx-link-external'></i></a>
           </div>
         </div>
@@ -233,13 +226,13 @@
       <input type="submit" value="Kirim Pesan" class="btn">
     </form>
   </section>
-  <footer>
-    <p>&copy; 2023 Web portofolio. By Raffi.</p>
+  <footer role="contentinfo">
+    <p>&copy; 2023 Web Portfolio. By Raffi.</p>
     <nav>
       <ul>
-          <li><a href="#main">home</a></li>
-          <li><a href="#sertifikat">sertifikat</a></li>
-          <li><a href="#contact">kontak</a></li>
+        <li><a href="#main">Home</a></li>
+        <li><a href="#sertifikat">Sertifikat</a></li>
+        <li><a href="#contact">Kontak</a></li>
       </ul>
     </nav>
   </footer>
@@ -252,20 +245,14 @@
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
     emailjs.init("UVCm0l1Od171Sd23b");
-  
+
     const form = document.getElementById("contact-form");
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("submit", (event) => {
       event.preventDefault();
-      
+
       const formData = new FormData(form);
-      const data = {
-        nama: formData.get("nama"),
-        email: formData.get("email"),
-        phone: formData.get("phone"),
-        subject: formData.get("subject"),
-        message: formData.get("message"),
-      };
-  
+      const data = Object.fromEntries(formData.entries());
+
       emailjs
         .send("service_raffi", "template_raffi", data)
         .then(() => {
